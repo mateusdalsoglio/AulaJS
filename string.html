@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let texto = 'Banana, Pera, Uva';
+
+        //Coloca todo texto em letra minuscula.
+        var r1 = texto.toLocaleLowerCase();
+        document.write(`<b>toLocaleLowerCase</b> - Coloca todo texto em letra minuscula: ${r1} <br><br>`)
+
+        // Coloca todo texto em caixa alta.
+        var r2 = texto.toUpperCase();
+        document.write(`<b>toUpperCase</b> - Coloca todo texto em caixa alta: ${r2} <br><br>`)
+
+        // Subistitui o primeiro elemento que achar
+        var r3 = texto.replace('Uva', 'Abacaxi');
+        document.write(`<b>replace</b> - Subistitui o primeiro elemento que achar: ${r3} <br><br>`)
+
+        // Subistitui todos os elemento que achar
+        var r4 = texto.replaceAll(',', '-');
+        document.write(`<b>replaceAll</b> - Subistitui todos os elemento que achar: ${r4} <br><br>`)
+
+        //Método extrai uma seção de uma string e a retorna como uma nova string, sem modificar a string original
+        var r5 = texto.slice(8, 12);
+        document.write(`<b>slice</b> - Método extrai uma seção de uma string e a retorna como uma nova string, sem modificar a string original: ${r5} <br><br>`)
+
+        //Ele é semelhante ao slice, a diferença é que ele não aceita indices negativos
+        var r6 = texto.substring(0, 6);
+        document.write(`<b>substring</b> - Ele é semelhante ao slice, a diferença é que ele não aceita indices negativos: ${r6} <br><br>`)
+    </script>
+</body>
+</html>

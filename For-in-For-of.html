@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //for in >> Basicamente ele percorre o array e te devolve o indice.
+        //for of >> Basicamente ele percorre o array e te devolve o valor que está no indice.
+
+         var frutas = ['Banana' , 'Pera', 'Uva', 'Maça'];
+
+        // for(var indice in frutas){
+        //     document.write(`Sou a fruta ${frutas[indice]} <br>`)
+        // }
+
+
+
+        //  for(var fruta of frutas){
+        //      document.write(`Sou a fruta ${fruta} <br>`)
+        //  }
+
+
+
+        frutas.forEach((fruta) => {
+            document.write(`Sou a fruta ${fruta} <br>`)
+        });
+
+    </script>
+</body>
+</html>

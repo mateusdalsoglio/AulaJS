@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var data = new Date();
+        // var data1 = new Date(2023, 3, 27);
+
+        // var data = new Date();
+        // var dia = data.getDate();
+        // var mes = data.getMonth() + 1; // o mês começa com zero
+        // var ano = data.getFullYear();
+
+        // document.write(data + '<br>' + dia + '<br>' + mes + '<br>' + ano)
+
+
+
+        // var data = new Date();
+        // var stringData = data.toLocaleDateString("pt-BR"); // "27/04/2023"
+
+        // document.write(data + '<br>' + stringData)
+
+
+
+        var data = new Date();
+        var umDiaEmMilissegundos = 24 * 60 * 60 * 1000;
+        var dataDeAmanha = new Date(data.getTime() + umDiaEmMilissegundos);
+
+        document.write(data + '<br>' + umDiaEmMilissegundos + '<br>' + dataDeAmanha)
+
+
+
+    </script>
+</body>
+</html>
